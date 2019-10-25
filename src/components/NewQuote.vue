@@ -1,8 +1,6 @@
 <template>
-  <!-- Here the App will render three components dynamicaly -->
   <div>
-    <h1>App Component</h1>
-    <hr />
+    <h1>New Quote Component</h1>
   </div>
 </template>
 
