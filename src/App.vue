@@ -1,13 +1,31 @@
 <template>
   <!-- Here the App will render three components dynamicaly -->
   <div>
-    <h1>App Component</h1>
+    <header>
+      <nav>
+        <button>Home</button>
+        <button>About</button>
+        <button>Add Quote</button>
+      </nav>
+    </header>
     <hr />
   </div>
 </template>
 
 <script>
-export default {};
+import Quotes from "./components/Quotes";
+import About from "./components/About";
+import NewQuote from "./components/NewQuote";
+
+export default {
+  data() {
+    return {
+      selectedComponent: "quoteApp",
+      quotes: ["Quote number one", "Quote number two", "Quote number three"]
+    };
+  },
+  components: {}
+};
 </script>
 
 <style scoped>
