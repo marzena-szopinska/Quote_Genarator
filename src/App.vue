@@ -9,7 +9,9 @@
       </nav>
     </header>
     <hr />
-    <component v-bind:is="selectedComponent"></component>
+    <!-- HOW WILL I PASS PROPS TO A SPECIFIC DYNAMIC COMPONENT? 
+    (want to pass quotes array only to Quotes component and use it there to create each Quote)-->
+    <component v-bind:is="selectedComponent" v-bind:quoteList="quotes"></component>
   </div>
 </template>
 
